@@ -1,0 +1,53 @@
+server:
+  port: 8804
+
+#spring:
+#  datasource:
+#    url: jdbc:mysql://rm-7xvv0q93rqc4n68e5oo.mysql.rds.aliyuncs.com/orange?serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: platform2022
+#    password: Platform2022
+#
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  shardingsphere:
+    datasource:
+      names: m1
+      m1:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://175.178.222.176:3307/orange?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true
+        username: root
+        password: Bld!#gyxmz.
+    props:
+      sql:
+        show: true
+    sharding:
+      tables:
+        t_environment_data:
+          actual-data-nodes: m1.t_environment_data_$->{[1,2,5,6,20,26,76]}
+          table-strategy:
+            inline:
+              algorithm-expression: t_environment_data_${data_id}
+              sharding-column: data_id
+
+
+mybatis-plus:
+  #mp逻辑删除
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  #mp日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #配置mapper xml文件的路径
+  mapper-locations: classpath:com/orange/boot/**/mapper/xml/*.xml
+
+#图片上传路径
+uploadPath: /root/platform/orange/img/  #图片 服务器路径
+
+#服务器的ip,用于获取图片
+ipAndPort: 120.77.156.205

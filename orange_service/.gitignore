@@ -1,0 +1,37 @@
+*.class
+*.log
+*.lock
+
+# Package Files #
+*.jar
+*.war
+*.ear
+/target
+/src/test/java/com/orange/boot/test/
+
+# idea
+.idea/
+
+*velocity.log*
+
+### STS ###
+.apt_generated
+.factorypath
+.springBeans
+h
+### IntelliJ IDEA ###
+*.ipr
+*.iws
+.idea
+.classpath
+.project
+.settings/
+bin/
+
+*.log
+tem/
+
+#rebel
+*rebel.xml*
+
+

@@ -1,0 +1,9 @@
+GET http://localhost:8804/dev2/citrus_expert/get
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-19T095718.404.json
+
+###
+

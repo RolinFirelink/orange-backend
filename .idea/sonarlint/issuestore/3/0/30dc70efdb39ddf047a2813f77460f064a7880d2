@@ -1,0 +1,14 @@
+
+V	java:S125N"<This block of commented-out lines of code should be removed.(İáà¸øÿÿÿÿ
+S	java:S106q"9Replace this use of System.out or System.err by a logger.(åÕ¹ÿÿÿÿÿ
+S	java:S106r"9Replace this use of System.out or System.err by a logger.(ŸŠ­úÿÿÿÿÿ
+Q	java:S125}"<This block of commented-out lines of code should be removed.(®‚ş
+R	java:S125"<This block of commented-out lines of code should be removed.(Ô£ˆŸ
+W	java:S125„"<This block of commented-out lines of code should be removed.(ïˆõÿıÿÿÿÿ
+R	java:S125Š"<This block of commented-out lines of code should be removed.(Ô¼¡ó
+R	java:S125"<This block of commented-out lines of code should be removed.(òÒØ£
+O	java:S106”"9Replace this use of System.out or System.err by a logger.(òÔÇÍ
+R	java:S125‘"<This block of commented-out lines of code should be removed.(òÒØ£
+T	java:S106•"9Replace this use of System.out or System.err by a logger.(ŸŠ­úÿÿÿÿÿ
+[
+java:S1128"@Remove this unused import 'org.apache.bcel.generic.TABLESWITCH'.(çî‡–úÿÿÿÿ

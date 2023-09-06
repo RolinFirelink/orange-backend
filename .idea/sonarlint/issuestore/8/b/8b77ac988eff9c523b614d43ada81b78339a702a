@@ -1,0 +1,15 @@
+
+J
+java:S3740:"/Provide the parametrized type for this generic.(°›¿´ýÿÿÿÿ
+c	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê¡ÌÀ
+W
+java:S18540"<Remove this useless assignment to local variable "resource".(Ð²Üÿþÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(Ô¯–°
+H
+java:S1135+"2Complete the task associated to this TODO comment.(¾Ãó
+H
+java:S14810"-Remove this unused "resource" local variable.(Ð²Üÿþÿÿÿÿ
+H
+java:S1135;"2Complete the task associated to this TODO comment.(õä¿½
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(ÁÔÈ·
+Q	java:S125B"<This block of commented-out lines of code should be removed.(†Ð¤ó

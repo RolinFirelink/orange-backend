@@ -1,0 +1,7 @@
+
+g	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ö§‹ûþÿÿÿÿ
+P
+java:S2479":Remove the non-escaped \u3000 character from this literal.(þôù„
+P
+java:S2479":Remove the non-escaped \u3000 character from this literal.(ýÏ±Ð

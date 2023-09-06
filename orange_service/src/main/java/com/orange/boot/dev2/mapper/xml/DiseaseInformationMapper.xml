@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.orange.boot.dev2.mapper.DiseaseInformationMapper">
+
+
+    <!-- 疾病名称 模糊查询 根据参数的多少决定查询的宽松-->
+    <select id="browseLike" resultType="com.orange.boot.dev2.entity.vo.BrowseParamsVO">
+        SELECT disease_id,disease_chinese_name,disaster_type_name,disease_introduce,disease_symptom  FROM
+        disease_information LEFT JOIN disaster_type on disaster_type.disaster_type_id = disease_information.disaster_type_id
+        <where>
+                 is_deleted = 0
+            <if test="diseaseChineseName != null and diseaseChineseName != '' and diseaseChineseName != 'null' ">
+                and disease_chinese_name like  concat ("%",#{diseaseChineseName},"%")
+            </if>
+            <if test="disasterTypeId != null and disasterTypeId != '' and disasterTypeId != 'null' ">
+                and disease_information.disaster_type_id = #{disasterTypeId}
+            </if>
+            <if test="citrusPartId != null and citrusPartId  != ''  and citrusPartId  != 'null' ">
+                and citrus_part_id = #{citrusPartId}
+            </if>
+
+        </where>
+
+    </select>
+
+    <!--    SELECT disease_id,disease_chinese_name,disease_picture_url FROM disease_information-->
+    <select id="diseaseLike" resultType="com.orange.boot.dev2.entity.vo.DiseasePictureNameVO">
+        SELECT disease_id , disease_picture_url,LEFT (disease_symptom ,25) as disease_concise_description,
+       disease_symptom  FROM disease_information
+<where>
+       is_deleted = 0
+    <if test="diseaseChineseName != null and diseaseChineseName != '' and diseaseChineseName != 'null' ">
+        and disease_chinese_name like  concat ("%",#{diseaseChineseName},"%")
+    </if>
+    <if test="disasterTypeId != null and disasterTypeId != '' and disasterTypeId != 'null' ">
+        and  disease_information.disaster_type_id = #{disasterTypeId}
+    </if>
+    <if test="citrusPartId != null and citrusPartId  != ''  and citrusPartId  != 'null' ">
+        and citrus_part_id = #{citrusPartId}
+    </if>
+</where>
+
+    </select>
+    <select id="catalogue" resultType="com.orange.boot.dev2.entity.vo.CatalogueVO">
+        SELECT disease_id,disease_characteristic from catalogue
+        <where>
+            <if test="disasterTypeId != null and disasterTypeId != '' and disasterTypeId != 'null' ">
+                 disaster_type_id = #{disasterTypeId}
+            </if>
+            <if test="citrusPartId != null and citrusPartId  != ''  and citrusPartId  != 'null' ">
+                and citrus_part_id = #{citrusPartId}
+            </if>
+        </where>
+    </select>
+
+</mapper>

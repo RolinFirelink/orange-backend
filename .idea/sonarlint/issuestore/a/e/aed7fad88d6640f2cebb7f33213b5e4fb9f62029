@@ -1,0 +1,20 @@
+
+T
+java:S1611*"2Remove the parentheses around the "item" parameter(Á‹ª“ıÿÿÿÿ8—á¾Ò÷0
+€
+java:S1128"^Remove this unused import 'com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper'.(à¡òúÿÿÿÿ8Ş¼¯Òú0
+N
+java:S1128
+",Remove this unused import 'org.jsoup.Jsoup'.(Ù±šªûÿÿÿÿ8ß¼¯Òú0
+R
+java:S1128"5Remove this unused import 'org.jsoup.nodes.Document'.(ô¯É8ß¼¯Òú0
+V
+java:S1128"4Remove this unused import 'org.jsoup.nodes.Element'.(ıƒ‘öşÿÿÿÿ8ß¼¯Òú0
+S
+java:S1128"6Remove this unused import 'org.jsoup.select.Elements'.(ëÂè8ß¼¯Òú0
+]
+java:S1128"@Remove this unused import 'org.springframework.beans.BeanUtils'.(ŠğÄÜ8ß¼¯Òú0
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ß¼¯Òú0
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ß¼¯Òú0

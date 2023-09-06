@@ -1,0 +1,18 @@
+
+\	java:S112š"FDefine and throw a dedicated exception instead of using a generic one.(‹“‚¥
+E
+java:S3740g"/Provide the parametrized type for this generic.(öõÄ¦
+o
+java:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬¦ÛÔ
+t
+java:S2293."YReplace the type specification in this constructor call with the diamond operator ("<>").(¥ÓèÄÿÿÿÿÿ
+t
+java:S22938"YReplace the type specification in this constructor call with the diamond operator ("<>").(³‘Öºûÿÿÿÿ
+o
+java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(äº„ú
+P
+java:S1854i":Remove this useless assignment to local variable "length".(Úýª±
+Q	java:S125K"<This block of commented-out lines of code should be removed.(®™é¦
+A
+java:S1481i"+Remove this unused "length" local variable.(Úýª±
+Q	java:S125j"<This block of commented-out lines of code should be removed.(®†Šâ

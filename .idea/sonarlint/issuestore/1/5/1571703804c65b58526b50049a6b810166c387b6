@@ -1,0 +1,11 @@
+
+M
+java:S2629"7Use the built-in formatting to construct this argument.(Üâ¬¬
+S
+java:S1854"8Remove this useless assignment to local variable "port".(üß–Æüÿÿÿÿ
+\
+java:S3252"AUse static access with "java.net.InetAddress" for "getLocalHost".(®ô™ãøÿÿÿÿ
+D
+java:S1481")Remove this unused "port" local variable.(üß–Æüÿÿÿÿ
+W
+java:S3457"AFormat specifiers should be used instead of string concatenation.(Üâ¬¬
