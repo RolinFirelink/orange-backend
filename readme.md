@@ -9,11 +9,13 @@ JDK8、SpringBoot2.2.1、MybatisPlus3.4.1、MySQL8.0.22、Druid1.1.20、Swagger1
 首先在本地创建 `orange` 数据库，选择好字符集：`utf8mb4`，排序规则：`utf8mb8_general_ci`
 。然后在数据库下执行项目携带的SQL文件即可（包含各个表和表结构）。
 
-启动项目即可访问本地Swagger，若要使用完整Web服务需要在本地启动前端服务，具体请看：xxxxxx
+启动项目即可访问本地Swagger，若要使用完整Web服务需要在本地启动前端服务，具体请看：[orange-front](https://github.com/RolinFirelink/orange-front)
 
 # 😀介绍
 
-柑橘农药减施监控云服务平台以SpringBoot为基础框架，使用MybatisPlus框架简化开发，前端使用Vue框架构建可视化组件和页面，可实现对柑橘基地的实时监控和环境预测等功能，其目标是用于减轻柑橘种植人员的负担，实现减施增效的目的。
+柑橘农药减施监控云服务平台后端以SpringBoot为基础框架，使用MybatisPlus框架简化开发，前端使用Vue和Element-UI框架构建可视化组件和页面，可实现对柑橘基地的实时监控和环境预测等功能，其目标是用于减轻柑橘种植人员的负担，实现减施增效的目的。
+
+本项目为柑橘农药减施监控云服务平台的后端
 
 ## 🏭系统功能
 
