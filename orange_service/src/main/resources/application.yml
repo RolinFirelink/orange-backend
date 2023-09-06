@@ -3,10 +3,10 @@ server:
 
 #spring:
 #  datasource:
-#    url: jdbc:mysql://rm-7xvv0q93rqc4n68e5oo.mysql.rds.aliyuncs.com/orange?serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull
+#    url: jdbc:mysql://localhost:3306/orange?serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull
 #    driver-class-name: com.mysql.cj.jdbc.Driver
-#    username: platform2022
-#    password: Platform2022
+#    username: 
+#    password: 
 #
 
 spring:
@@ -18,9 +18,9 @@ spring:
       m1:
         driver-class-name: com.mysql.cj.jdbc.Driver
         type: com.alibaba.druid.pool.DruidDataSource
-        url: jdbc:mysql://175.178.222.176:3307/orange?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true
-        username: root
-        password: Bld!#gyxmz.
+        url: jdbc:mysql://localhost:3306/orange?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true
+        username: 
+        password: 
     props:
       sql:
         show: true
@@ -50,4 +50,4 @@ mybatis-plus:
 uploadPath: /root/platform/orange/img/  #图片 服务器路径
 
 #服务器的ip,用于获取图片
-ipAndPort: 120.77.156.205
+ipAndPort: 
